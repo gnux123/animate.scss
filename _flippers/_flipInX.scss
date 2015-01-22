@@ -1,26 +1,37 @@
 @-webkit-keyframes flipInX {
-    0% {-webkit-transform: perspective(400px) rotateX(90deg); opacity: 0;}
-    40% {-webkit-transform: perspective(400px) rotateX(-10deg);}
-    70% {-webkit-transform: perspective(400px) rotateX(10deg);}
-    100% {-webkit-transform: perspective(400px) rotateX(0deg); opacity: 1;}
+    0% {-webkit-transform: perspective(400px) rotate3d(1,0,0,90deg); opacity: 0;}
+    40% {-webkit-transform: perspective(400px) rotate3d(1,0,0,-20deg);}
+    60% {-webkit-transform: perspective(400px) rotate3d(1,0,0,10deg); opacity: 1;}
+    80% {-webkit-transform: perspective(400px) rotate3d(1,0,0,-5deg);}
+    100% {-webkit-transform: perspective(400px);}
 }
 @-moz-keyframes flipInX {
-    0% {-moz-transform: perspective(400px) rotateX(90deg); opacity: 0;}
-    40% {-moz-transform: perspective(400px) rotateX(-10deg);}
-    70% {-moz-transform: perspective(400px) rotateX(10deg);}
-    100% {-moz-transform: perspective(400px) rotateX(0deg); opacity: 1;}
+    0% {-moz-transform: perspective(400px) rotate3d(1,0,0,90deg); opacity: 0;}
+    40% {-moz-transform: perspective(400px) rotate3d(1,0,0,-20deg);}
+    60% {-moz-transform: perspective(400px) rotate3d(1,0,0,10deg); opacity: 1;}
+    80% {-moz-transform: perspective(400px) rotate3d(1,0,0,-5deg);}
+    100% {-moz-transform: perspective(400px);}
+}
+@-ms-keyframes flipInX {
+    0% {-ms-transform: perspective(400px) rotate3d(1,0,0,90deg); opacity: 0;}
+    40% {-ms-transform: perspective(400px) rotate3d(1,0,0,-20deg);}
+    60% {-ms-transform: perspective(400px) rotate3d(1,0,0,10deg); opacity: 1;}
+    80% {-ms-transform: perspective(400px) rotate3d(1,0,0,-5deg);}
+    100% {-ms-transform: perspective(400px);}
 }
 @-o-keyframes flipInX {
-    0% {-o-transform: perspective(400px) rotateX(90deg); opacity: 0;}
-    40% {-o-transform: perspective(400px) rotateX(-10deg);}
-    70% {-o-transform: perspective(400px) rotateX(10deg);}
-    100% {-o-transform: perspective(400px) rotateX(0deg); opacity: 1;}
+    0% {-o-transform: perspective(400px) rotate3d(1,0,0,90deg); opacity: 0;}
+    40% {-o-transform: perspective(400px) rotate3d(1,0,0,-20deg);}
+    60% {-o-transform: perspective(400px) rotate3d(1,0,0,10deg); opacity: 1;}
+    80% {-o-transform: perspective(400px) rotate3d(1,0,0,-5deg);}
+    100% {-o-transform: perspective(400px);}
 }
 @keyframes flipInX {
-    0% {transform: perspective(400px) rotateX(90deg); opacity: 0;}
-    40% {transform: perspective(400px) rotateX(-10deg);}
-    70% {transform: perspective(400px) rotateX(10deg);}
-    100% {transform: perspective(400px) rotateX(0deg); opacity: 1;}
+    0% {transform: perspective(400px) rotate3d(1,0,0,90deg); opacity: 0;}
+    40% {transform: perspective(400px) rotate3d(1,0,0,-20deg);}
+    60% {transform: perspective(400px) rotate3d(1,0,0,10deg); opacity: 1;}
+    80% {transform: perspective(400px) rotate3d(1,0,0,-5deg);}
+    100% {transform: perspective(400px);}
 }
 
 @mixin flipInX($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
